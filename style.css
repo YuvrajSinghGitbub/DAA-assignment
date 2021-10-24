@@ -1,0 +1,106 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    background-color: aquamarine;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 3rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 30px sandybrown;
+    margin: auto;
+}
+
+#algo-heading {
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 400px) {
+    #algo-info {
+        display: none;
+    }
+
+    .container {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+}
+
+#algo-about {
+    padding-left: 0.5rem;
+}
+
+#algo-info-constainer {
+    text-align: justify;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.working-area {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.2rem;
+    border-top: 3px solid black;
+    margin-top: 2rem;
+}
+
+label {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+#array-input {
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 0.5rem;
+    box-shadow: 0px 5px 8px grey;
+}
+
+#submit-btn {
+    width: 5rem;
+    height: 2.13rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 15px;
+    transition: all 200ms ease;
+}
+
+#submit-btn:hover {
+    box-shadow: 0px 5px 8px grey;
+    border: none;
+    transform: translate(0, -3px);
+}
+
+#sorted-array-title {
+    font-weight: 600;
+}
+
+.output-area {
+    margin-top: 1rem;
+}
+
+.select-algo {
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.select-algo > form {
+    display: flex;
+    margin: 1rem auto 0 0;
+}
+
+.select-algo > form > input {
+    margin-top: 7px;
+}

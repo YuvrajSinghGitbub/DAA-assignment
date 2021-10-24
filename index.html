@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Selection Sort</title>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <h2 id="algo-heading">---</h2>
+
+                <h3 id="algo-about">What is the algorithm about</h3>
+                <div id="algo-info-constainer">
+                    <p id="algo-info"></p>
+                </div>
+
+                <div class="working-area">
+                    <div class="select-algo">
+                        <form>
+                            <input
+                                class="radio-btn"
+                                type="radio"
+                                name="sort"
+                                value="selectionSort"
+                            />
+                            <label for="selection-sort">Selection Sort</label>
+
+                            <input
+                                class="radio-btn"
+                                type="radio"
+                                name="sort"
+                                value="mergeSort"
+                            />
+                            <label for="merge-sort">Merge Sort</label>
+
+                            <input
+                                class="radio-btn"
+                                type="radio"
+                                name="sort"
+                                value="quickSort"
+                            />
+                            <label for="quick-sort">Quick Sort</label>
+
+                            <input
+                                class="radio-btn"
+                                type="radio"
+                                name="sort"
+                                value="insertionSort"
+                            />
+                            <label for="insertion-sort">Insertion Sort</label>
+                        </form>
+                    </div>
+                    <div class="input-area">
+                        <form id="form">
+                            <label for="array-input"
+                                >Input (comma seprated):</label
+                            >
+                            <input
+                                type="text"
+                                id="array-input"
+                                name="array-input"
+                                placeholder="eg: 1,4,0,99,2,-2"
+                            />
+                            <input
+                                id="submit-btn"
+                                type="button"
+                                value="submit"
+                            />
+                        </form>
+                    </div>
+
+                    <div class="output-area">
+                        <span id="sorted-array-title"
+                            >The sorted array is:</span
+                        >
+                        <span id="output"></span>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
